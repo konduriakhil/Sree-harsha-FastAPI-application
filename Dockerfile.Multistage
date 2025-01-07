@@ -5,7 +5,7 @@ WORKDIR /code
 COPY main.py main.py
 ADD templates templates
 COPY --from=aquasec/trivy:latest /usr/local/bin/trivy /usr/local/bin/trivy
-RUN trivy filesystem -f json --scanners vuln,secret,misconfig --exit-code 0 --no-progress > /tmp/trivy.json / \
+RUN trivy filesystem -f json --scanners vuln,secret,misconfig --exit-code 1 --no-progress > /tmp/trivy.json / \
     && trivy --version
 
 #Stage For Installing Python & APT Dependencies
