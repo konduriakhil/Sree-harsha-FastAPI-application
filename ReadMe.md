@@ -8,8 +8,8 @@ docker run --rm -d --name fastapi1 \
 -p 9000:80 sreeharshav/devsecopsb42:v4
 
 docker run --rm -d --name fastapi1 \
--e AWS_ACCESS_KEY_ID=AKIA2QEFLENWA6Z4KDDT \
--e AWS_SECRET_ACCESS_KEY=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 \
+-e AWS_ACCESS_KEY_ID=AKIAUBKFCGI7WE4YFZHQ\
+-e AWS_SECRET_ACCESS_KEY=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 \
 -v /root:/rootdata \
 -p 80:80 sreeharshav/multistage:v1
 
