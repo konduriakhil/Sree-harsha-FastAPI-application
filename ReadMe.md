@@ -2,14 +2,14 @@
 docker run --rm -d --name app1 --publish 8081:8080  sreeharshav/devsecopsb41:v6 --port 8080
 
 docker run --rm -d --name fastapi1 \
--e AWS_ACCESS_KEY_ID=AKIA2QEFLENWNTLXQINZ \
--e AWS_SECRET_ACCESS_KEY=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 \
+-e AWS_ACCESS_KEY_ID=AKIAUBKFCGI72IWHHHEY \
+-e AWS_SECRET_ACCESS_KEY=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 \
 -e APP_NAME="FASTAPI_APP" -e HOSTNAME="TESTCON1" -e DEPLOYMENT_BRANCH="DEV" \
 -p 9000:80 sreeharshav/devsecopsb42:v4
 
 docker run --rm -d --name fastapi1 \
--e AWS_ACCESS_KEY_ID=AKIAUBKFCGI7WE4YFZHQ\
--e AWS_SECRET_ACCESS_KEY=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 \
+-e AWS_ACCESS_KEY_ID=AKIAUBKFCGI72IWHHHEY\
+-e AWS_SECRET_ACCESS_KEY=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 \
 -v /root:/rootdata \
 -p 80:80 sreeharshav/multistage:v1
 
