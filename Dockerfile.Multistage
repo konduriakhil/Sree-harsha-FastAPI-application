@@ -23,8 +23,8 @@ RUN unzip terraform.zip -d /usr/local/bin
 FROM python:3.11 AS image-stage
 LABEL app="BOTO3 with FastAPI"
 ENV AWS_DEFAULT_REGION=us-east-1
-ENV AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
-ENV AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+ENV AWS_ACCESS_KEY_ID=AKIAUBKFCGI72IWHHHEY
+ENV AWS_SECRET_ACCESS_KEY=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
 WORKDIR /code
 COPY --from=build-stage /usr/local/lib/python3.11 /usr/local/lib/python3.11
 COPY --from=build-stage /usr/local/bin/terraform /usr/local/bin/terraform
